@@ -28,7 +28,7 @@ void UEcoscapeGameInstance::Init()
 
 	// Find all the resource data assets and add them to the resources map
 	TArray<FAssetData> ItemAssetData;
-	AssetRegistry.GetAssetsByClass(UPlaceableItemData::StaticClass()->GetFName(), ItemAssetData, true);
+	AssetRegistry.GetAssetsByClass(UPlaceableItemData::StaticClass()->GetClassPathName(), ItemAssetData, true);
 	for (auto& Asset : ItemAssetData)
 	{
 		UPlaceableItemData* Item = Cast<UPlaceableItemData>(Asset.GetAsset());
@@ -42,7 +42,7 @@ void UEcoscapeGameInstance::Init()
 
 	// Find all the animal data assets and add them to the animals map
 	TArray<FAssetData> AnimalAssetData;
-	AssetRegistry.GetAssetsByClass(UAnimalData::StaticClass()->GetFName(), AnimalAssetData, true);
+	AssetRegistry.GetAssetsByClass(UAnimalData::StaticClass()->GetClassPathName(), AnimalAssetData, true);
 	for (auto& Asset : AnimalAssetData)
 	{
 		UAnimalData* Animal = Cast<UAnimalData>(Asset.GetAsset());
@@ -54,7 +54,7 @@ void UEcoscapeGameInstance::Init()
 
 	// Find all the codex entries assets and add them to the codex entries map
 	TArray<FAssetData> CodexData;
-	AssetRegistry.GetAssetsByClass(UCodexEntry::StaticClass()->GetFName(), CodexData, true);
+	AssetRegistry.GetAssetsByClass(UCodexEntry::StaticClass()->GetClassPathName(), CodexData, true);
 	for (auto& Asset : CodexData)
 	{
 		UCodexEntry* CodexEntry = Cast<UCodexEntry>(Asset.GetAsset());

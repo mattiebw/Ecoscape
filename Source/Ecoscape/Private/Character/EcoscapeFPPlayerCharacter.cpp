@@ -2,8 +2,6 @@
 // with edits by Matt Ware
 
 #include "Character/EcoscapeFPPlayerCharacter.h"
-	
-#include "Launch/Resources/Version.h"
 
 #if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 1
 #include "Engine/DamageEvents.h"

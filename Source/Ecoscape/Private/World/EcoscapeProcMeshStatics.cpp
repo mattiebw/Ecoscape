@@ -4,6 +4,7 @@
 
 #include "EcoscapeStatics.h"
 #include "KismetProceduralMeshLibrary.h"
+#include "ProceduralMeshComponent/Public/ProceduralMeshComponent.h"
 
 void UEcoscapeProcMeshStatics::AddCuboid(TArray<FVector>& Verticies, TArray<int>& Indicies, TArray<FVector2D>& UV0, TArray<FVector>& Normals, TArray<FProcMeshTangent>& Tangents, FVector Center, FVector Extents, bool OverrideUV, FVector2D UV)
 {

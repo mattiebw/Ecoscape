@@ -46,7 +46,7 @@ void AProceduralFenceMesh::Regenerate()
 	Tangents.Empty();
 	ProceduralMeshComponent->SetMaterial(0, Material);
 	
-	FVector LastBottomPosition, LastTopPosition;
+	FVector LastBottomPosition = FVector::ZeroVector, LastTopPosition = FVector::ZeroVector;
 
 	if (BottomSplineComponent->GetNumberOfSplinePoints() != TopSplineComponent->GetNumberOfSplinePoints())
 	{

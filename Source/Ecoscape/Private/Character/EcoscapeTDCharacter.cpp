@@ -5,6 +5,7 @@
 #include "EcoscapeLog.h"
 #include "EcoscapeStatics.h"
 #include "Character/EcoscapePlayerController.h"
+#include "Engine/OverlapResult.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "World/EcoscapeTerrain.h"
 #include "World/Fence/FencePlacementPreview.h"

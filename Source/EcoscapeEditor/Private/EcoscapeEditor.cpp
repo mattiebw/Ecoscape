@@ -84,7 +84,7 @@ void FEcoscapeEditorModule::GeneratePlaceableData()
     
     // Find all the resource data assets and add them to the resources map
     TArray<FAssetData> ItemAssetData;
-    AssetRegistry.GetAssetsByClass(UPlaceableItemData::StaticClass()->GetFName(), ItemAssetData, true);
+    AssetRegistry.GetAssetsByClass(UPlaceableItemData::StaticClass()->GetClassPathName(), ItemAssetData, true);
     for (auto& Asset : ItemAssetData)
     {
     	UPlaceableItemData* Item = Cast<UPlaceableItemData>(Asset.GetAsset());

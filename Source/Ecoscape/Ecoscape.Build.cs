@@ -8,8 +8,8 @@ public class Ecoscape : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "PhysicsCore", "UMG", "AIModule", "GameplayTasks" });
-		PrivateDependencyModuleNames.AddRange(new string[] { "ProceduralMeshComponent", "GeometryFramework", "GeometryScriptingCore", "NavigationSystem" });
+		PublicDependencyModuleNames.AddRange(["Core", "CoreUObject", "Engine", "InputCore", "PhysicsCore", "UMG", "AIModule", "GameplayTasks"]);
+		PrivateDependencyModuleNames.AddRange(["ProceduralMeshComponent", "GeometryFramework", "GeometryScriptingCore", "NavigationSystem", "VorbisAudioDecoder"]);
 		
 		if (Target.bBuildEditor) 
 		{

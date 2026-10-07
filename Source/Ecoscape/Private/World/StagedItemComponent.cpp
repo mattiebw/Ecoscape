@@ -2,6 +2,7 @@
 
 #include "World/StagedItemComponent.h"
 
+#include "Engine/OverlapResult.h"
 #include "Ecoscape.h"
 #include "EcoscapeLog.h"
 #include "EcoscapeStatics.h"

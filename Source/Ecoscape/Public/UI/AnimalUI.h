@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Character/Animals/BaseAnimal.h"
-#include "UMG/Public/Blueprint/UserWidget.h"
+#include "Blueprint/UserWidget.h"
 #include "AnimalUI.generated.h"
 
 UINTERFACE(Blueprintable)

@@ -8,7 +8,7 @@ public class EcoscapeTarget : TargetRules
 	public EcoscapeTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.AddRange( new string[] { "Ecoscape" } );
 		if (bBuildEditor)
 			ExtraModuleNames.Add("EcoscapeEditor");

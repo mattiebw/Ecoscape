@@ -10,6 +10,7 @@
 #include "KismetProceduralMeshLibrary.h"
 #include "NavigationSystem.h"
 #include "Engine/StaticMeshActor.h"
+#include "Engine/OverlapResult.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Misc/FileHelper.h"
 #include "Serialization/BufferArchive.h"
@@ -105,7 +106,7 @@ void AEcoscapeTerrain::CalculateDiversity()
 	{
 		float Diff = WeightMean - Item.Value;
 		if (Diff > 0) // If there's less than something than average, don't effect the values as much.
-			Diff *= 0.1;
+			Diff *= 0.1f;
 		DifferencesMean += abs(Diff);
 		TotalDifference += abs(Diff);
 	}
@@ -235,7 +236,6 @@ bool AEcoscapeTerrain::IsVertWalkable(int Index, bool bDiscountWet)
 	// Check collisions
 	// TODO: heavy
 	static FCollisionShape Box = FCollisionShape::MakeBox(FVector(Scale / 2, Scale / 2, Scale * 2));
-	TArray<FOverlapResult> Overlaps;
 	if (GetWorld()->OverlapBlockingTestByChannel(GetActorLocation() + Verticies[Index], FQuat::Identity, ECC_BLOCKS_HABITAT, Box))
 		return false;
 	

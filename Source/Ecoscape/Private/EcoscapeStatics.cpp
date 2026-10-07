@@ -105,7 +105,7 @@ void UEcoscapeStatics::TrimTrailingZeros(FString& String)
 		}
 	}
 	check(TrimIndex != INDEX_NONE && DecimalSeparatorIndex != INDEX_NONE);
-	String.RemoveAt(TrimIndex, String.Len() - TrimIndex, /*bAllowShrinking*/false);
+	String.RemoveAt(TrimIndex, String.Len() - TrimIndex, EAllowShrinking::No);
 }
 
 FString UEcoscapeStatics::GetLetterFromNum(int Num)

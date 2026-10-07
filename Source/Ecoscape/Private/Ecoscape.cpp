@@ -5,8 +5,8 @@
 #include "EcoscapeLog.h"
 #include "Modules/ModuleManager.h"
 
-#include "MessageLog/Public/MessageLogInitializationOptions.h"
-#include "MessageLog/Public/MessageLogModule.h"
+#include "MessageLogInitializationOptions.h"
+#include "MessageLogModule.h"
 
 DEFINE_LOG_CATEGORY(LogEcoscape)
 

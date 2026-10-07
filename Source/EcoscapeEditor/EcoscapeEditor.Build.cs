@@ -8,7 +8,7 @@ public class EcoscapeEditor : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "Ecoscape", "UnrealEd" });
-		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore", "LevelEditor" });
+		PublicDependencyModuleNames.AddRange(["Core", "CoreUObject", "Engine", "Ecoscape", "UnrealEd"]);
+		PrivateDependencyModuleNames.AddRange(["Slate", "SlateCore", "LevelEditor", "UMG"]);
 	}
 }
